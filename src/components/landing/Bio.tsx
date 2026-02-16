@@ -1,0 +1,92 @@
+import Image from "next/image";
+
+export default function Bio() {
+    return (
+        <section id="sobre-mi" className="py-24 lg:py-32 relative">
+            <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
+                <div className="text-center mb-16">
+                    <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-4 block">
+                        Sobre el proceso
+                    </span>
+                    <h2 className="font-serif text-4xl md:text-5xl text-text-main dark:text-white mb-8">
+                        Emigrar es nacer de nuevo
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20 mx-auto rounded-full"></div>
+                </div>
+                <div className="glass-card rounded-3xl p-8 md:p-12 shadow-sm bg-white/70 dark:bg-white/5 backdrop-blur-md border border-white/80 dark:border-white/10">
+                    <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-start">
+                        <div className="prose prose-lg prose-stone dark:prose-invert text-text-main/80 dark:text-gray-300 font-light leading-loose text-lg text-justify md:text-left">
+                            <p className="mb-8">
+                                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-primary">
+                                    L
+                                </span>
+                                a distancia no solo se mide en kilómetros, sino en las ausencias
+                                cotidianas. Cuando decidimos partir, llevamos una valija llena
+                                de sueños, pero también un equipaje invisible de miedos y
+                                expectativas.
+                            </p>
+                            <p className="mb-8">
+                                Como argentina viviendo en Florencia, entiendo profundamente la
+                                ambivalencia del migrante: la alegría de descubrir lo nuevo
+                                conviviendo con la nostalgia de lo conocido. El{" "}
+                                <strong>{"duelo migratorio"}</strong> no es una enfermedad, es un
+                                proceso natural de adaptación que requiere tiempo, paciencia y,
+                                sobre todo, un espacio donde poder hablar tu propio idioma
+                                emocional.
+                            </p>
+                            <p>
+                                Mi enfoque terapéutico busca integrar esas dos partes de tu
+                                identidad: la que fuiste y la que estás construyendo. No tenés
+                                que elegir entre tus raíces y tus alas.
+                            </p>
+                        </div>
+                        <div className="flex flex-col items-center space-y-4 md:pt-4 min-w-[200px]">
+                            <div className="relative group">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-orange-100/50 rounded-full blur opacity-40 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"></div>
+                                <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 dark:border-gray-800 shadow-lg">
+                                    <Image
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuMRyoNLqACEKoWkXlmPV-CuYMdtXFVLTDb5Y_Xvl72QQnunwlpF_QHrygNpKVVJsh3Zetukjye5DftmIUbcxuqj6mJ9UJXkRzbp_gU2W0H91R6aFKB2FVgRenPVxW_UoAD5Hm6we3_OpZ5G0vNSSnTriXdI0XZuFTdtzbzVZ_mY3YJCylrm-z9uuAh0yjVpW1Y0JWi_rEWSBlMuM9m4rgTHZVc3CQhL4MWMk1c4RbtMZrdZ-M_AeO1-rwFQG4yvDGHlkkX8ZkdUI"
+                                        alt="Josefina Portrait"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <h4 className="font-serif text-xl font-medium text-text-main dark:text-white">
+                                    Lic. Josefina M.
+                                </h4>
+                                <p className="text-sm text-primary font-medium mt-1">
+                                    Psicóloga UBA
+                                </p>
+                                <p className="text-xs text-text-main/60 dark:text-gray-500 mt-1">
+                                    Mat. 4521 • Expat en Italia
+                                </p>
+                            </div>
+                            <div className="pt-2 flex items-center justify-center">
+                                <div className="relative w-8 h-6 mx-1 hover:scale-110 transition-transform">
+                                    <Image
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuvhHMH_CV1eTiwCOHS2IOg8HdHyxlAOn-9fwXUVo1YcfvXy83SnoU3v68TfJCuO0siz43w64388yQDSWCsvnfDaFl6OJF6DnDYdUpg05Iv2jW8CLNW6C3U2YBM0ve640QA0ECuYp2cv5TOq-CIqtR5Ul_1NyJhihY4Cu4bGrqCwckvzYuqkdfwfFFvSxXszXa2ysYOfYCImGlqZHKosL-HmPyn4iw8UAThWmudo77cHaFKVIGRVw4Md7KURTbP3VIlVfg14lXIt8"
+                                        alt="Argentina Flag"
+                                        fill
+                                        className="object-contain opacity-80"
+                                    />
+                                </div>
+                                <span className="text-xs text-gray-400">&</span>
+                                <div className="relative w-8 h-6 mx-1 hover:scale-110 transition-transform">
+                                    <Image
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW4flSOtFBAYQ7Fh9OlpkfarqlQhILWFaChy838mCEVMn1ZmImzXoOY3z5nsAFji3cV1LwuhDSh0KTORB5aa_lElsttUjxwbNNdT4hOpUhVzSkI0Vfz4xHcZ0NnetFm16KOozD3UnP5ScBVRazyMq53gjq6Mk6tm5xzT9tX4mrGqxiw8btTXSMgDGSNH4jFSY298rnGuw0Nza3P5WAxBLPWogjg6c49VSLce5LnbG1vDXaee1Pf1il8lD1id17h8bSagGBRqITMbX4"
+                                        alt="Italy Flag"
+                                        fill
+                                        className="object-contain opacity-80"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+        </section>
+    );
+}

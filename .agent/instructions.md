@@ -1,53 +1,65 @@
-# Reglas de Mimetismo Técnico: Pepena Web
+# Reglas de Desarrollo: Josefina Psicología
 
-Estas reglas derivan de la auditoría al workspace 'medevice' (Repo Front) y son de cumplimiento obligatorio para garantizar consistencia técnica.
+Estas reglas definen el estándar técnico y estético para el proyecto `JOCHA-WEB`. Su cumplimiento es obligatorio para mantener la coherencia con `medevice-front` y la calidad premium del sitio.
 
 ---
 
 ## 1. Stack Tecnológico Estricto
 - **Framework**: Next.js 15 (App Router).
 - **Lenguaje**: TypeScript (Strict Mode obligatorio). `noImplicitAny: true`.
-- **Estilos**: Tailwind CSS + `tailwindcss-animate`.
+- **Estilos**: Tailwind CSS 3.
+  - **Plugins**: `tailwindcss-animate`.
+  - **Config**: Uso de variables CSS para temas (Light/Dark).
 - **UI Components**: Shadcn UI (Radix Primitives) + Iconos `lucide-react`.
-- **Gestión de Estado**: React Hooks nativos (usar librerías solo si es crítico).
+- **Fuentes**: `Inter` (sans) y `Lora` (serif) vía `next/font/google`.
 
-## 2. Patrones de Código
-- **Componentes Funcionales**:
+## 2. Estética y Diseño (Premium & Empathic)
+- **Paleta de Colores**:
+  - `primary`: Verdes naturales (#5F7161, #7A8C7C).
+  - `background`: Tonos crema/papel (#F9F7F2) y sage suave.
+  - **Uso**: Priorizar la calma y la legibilidad.
+- **Glassmorphism**:
+  - Usar clases `glass-card` (definidas en globals.css o vía utilidades Tailwind) para tarjetas flotantes.
+  - `backdrop-blur-md` + bordes semitransparentes (`border-white/20`).
+- **Imágenes**:
+  - **Obligatorio**: Uso de `next/image` con `width/height` o `fill`.
+  - **Bordes**: Redondeados suaves (`rounded-2xl`, `rounded-3xl` en retratos).
+
+## 3. Arquitectura y Patrones
+- **Directorios**:
+  - `src/components/landing/`: Componentes específicos de la Landing Page (Hero, Bio, Services).
+  - `src/components/ui/`: Componentes reutilizables (Button, Accordion, etc.).
+  - `src/app/`: Rutas y Layouts.
+- **Imports**:
+  - Usar alias absoluto `@/` siempre.
+  - Ej: `import { Button } from "@/components/ui/button"`.
+
+## 4. Flujo de Trabajo (Agentic)
+- **Pre-Commit Audit**:
+  - Antes de sugerir un commit, **DEBES** ejecutar la skill `audit-pre-commit`.
+  - Comando: `npm run lint && npx tsc --noEmit`.
+  - **Tolerancia Cero**: No se permite commitear con errores de lint o tipos.
+- **Rutas de Archivo**:
+  - En tus razonamientos y tool calls, usa **RUTAS ABSOLUTAS DE WINDOWS**.
+  - Ej: `C:\Users\sebas\Desktop\Dev-projects\JOCHA-WEB\...`
+- **Branch Protection**:
+  - **NUNCA** commitear directo a `main`.
+  - Crear feature branches: `feat/landing-page`, `fix/styling`, etc.
+
+## 5. TypeScript Standards
+- **Interfaces**: Definir interfaces explícitas para Props.
   ```tsx
-  // Correcto
-  const MyComponent = ({ prop }: Props): React.JSX.Element => { ... }
+  interface HeroProps {
+    title: string;
+    subtitle?: string;
+  }
   ```
-  - Explicitar siempre el tipo de retorno `React.JSX.Element`.
-  - Usar `type` para props en lugar de `interface` (salvo que se requiera extensión).
-
-- **Estructura de Directorios**:
-  - `src/components/[feature]/[component].tsx` (Agrupar por funcionalidad lógica).
-  - `src/components/ui/` (Componentes base Shadcn).
-  - `src/app/` (Páginas y Layouts).
-  - `src/lib/utils.ts` (Utilidades como `cn`).
-
-- **Importaciones**:
-  - Usar alias de ruta `@/` (Ej: `import { Button } from "@/components/ui/button"`).
-
-## 3. Estilo y Clases (Tailwind)
-- **Utilidades**: Usar `cn()` (clsx + tailwind-merge) para combinaciones condicionales.
-- **Animaciones**: Usar clases `animate-in`, `fade-in`, `slide-in-from-*` (Patrón Medevice).
-- **Transiciones**: `transition-all duration-300` por defecto en elementos interactivos.
-- **Glassmorphism**: `backdrop-blur-sm` o `md` en tarjetas flotantes o overlays.
-- **Bordes**: `rounded-xl` o `rounded-2xl` para contenedores "modernos" (Adaptar a Mondrian según diseño, pero mantener la calidad de implementación).
-
-## 4. TypeScript & Linting
-- **Prohibido `any`**: Definir tipos o interfaces para todas las props y respuestas de API.
-- **Prop Drilling**: Evitar excesivo prop drilling; usar composición o Context si es necesario.
-- **Archivos**: Nombres en `kebab-case` para archivos (ej: `action-card.tsx`) y `PascalCase` para componentes exportados.
-
-## 5. Mantenibilidad
-- **Comentarios**: Mínimos, solo para lógica compleja. El código debe ser auto-explicativo.
-- **Magic Strings**: Extraer textos repetitivos o configuración a constantes o archivos de configuración.
+- **Eventos**: Tipar eventos de React (ej: `React.ChangeEvent<HTMLInputElement>`).
+- **No `any`**: Jamás usar `any`. Si es desconocido, usar `unknown` y validar.
 
 ---
 
-## 6. Reglas Específicas del Proyecto (Pepena Mondrian)
-- **Grilla**: Respetar estrictamente la grilla de 12 columnas.
-- **Bordes**: Los bordes de separación Mondrian deben ser consistentes (8px recomendado).
-- **Colores**: Usar variables CSS/Tailwind (`--primary`, `--secondary`) mapeadas a los colores Mondrian (Rojo, Azul, Amarillo, Negro, Blanco).
+## 6. Comandos Recurrentes
+- **Dev Server**: `npm run dev -- -p 4000` (Puerto 4000 estricto).
+- **Lint**: `npm run lint`.
+- **Build**: `npm run build`.

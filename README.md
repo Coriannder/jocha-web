@@ -1,24 +1,25 @@
-# Pepena Web 🧠
+# Josefina Psicología 🧠
 
-Landing page profesional para servicios de psicología (Buenos Aires / Online).
-Diseñada con estética **Mondrian** (Neoplasticismo) y enfoque minimalista.
+Landing page profesional para servicios de psicología online y presencial (Florencia, Italia).
+Diseñada con un enfoque **empático, minimalista y premium**, orientada a expatriados argentinos.
 
-![Mondrian Style](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Piet_Mondrian_-_Composition_with_Red%2C_Blue_and_Yellow_-_VGM_Z81.jpg/800px-Piet_Mondrian_-_Composition_with_Red%2C_Blue_and_Yellow_-_VGM_Z81.jpg)
+
 
 ## 🛠️ Stack Tecnológico
 
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
 - **Lenguaje**: TypeScript (Strict Mode)
-- **Estilos**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Estilos**: [Tailwind CSS 3](https://tailwindcss.com/) + `tailwindcss-animate`
 - **UI Components**: [Shadcn UI](https://ui.shadcn.com/)
 - **Iconos**: Lucide React
+- **Deploy**: Vercel (Recomendado)
 
 ## 🚀 Instalación y Desarrollo
 
 1.  **Clonar repositorio**:
     ```bash
-    git clone https://github.com/Coriannder/pepena-web.git
-    cd pepena-web
+    git clone [URL_DEL_REPO]
+    cd jocha-web
     ```
 
 2.  **Instalar dependencias**:
@@ -26,23 +27,36 @@ Diseñada con estética **Mondrian** (Neoplasticismo) y enfoque minimalista.
     npm install
     ```
 
-3.  **Correr servidor de desarrollo**:
+3.  **Correr servidor de desarrollo** (Puerto 4000 estricto):
     ```bash
-    npm run dev
+    npm run dev -- -p 4000
     ```
-    Visitar [http://localhost:3000](http://localhost:3000)
+    Visitar [http://localhost:4000](http://localhost:4000)
 
-## 🎨 Guía de Estilo
+## 🤝 Flujo de Trabajo (Contribución)
 
-Ver [.agent/instructions.md](.agent/instructions.md) para reglas de mimetismo técnico y estándares de código de este proyecto.
+Para mantener la calidad del código alineada con `medevice-front`, es **OBLIGATORIO** seguir estos pasos antes de cada commit:
 
-## 📅 Roadmap
+1.  **Ejecutar Auditoría Pre-Commit**:
+    ```bash
+    npm run lint && npx tsc --noEmit
+    ```
+    *No commitear si hay errores.*
 
-- [x] **Jornada 0**: Configuración de Infraestructura y Stack.
-- [ ] **Jornada 1**: Sistema de Grilla Mondrian y Layouts.
-- [ ] **Jornada 2**: Navegación y Estética Visual.
-- [ ] **Jornada 3**: Contenido y Servicios.
-- [ ] **Jornada 4**: Integraciones (Calendly, WhatsApp) y SEO.
+2.  **Standards**:
+    - Usar rutas absolutas (`@/components/...`).
+    - Tipado estricto (No `any`).
+    - Componentes en `src/components/landing` (específicos) o `src/components/ui` (genéricos).
+
+Ver [.agent/instructions.md](.agent/instructions.md) para reglas detalladas de mimetismo técnico.
+
+## 📅 Features
+
+- [x] **Hero & Bio**: Presentación profesional con optimización de imágenes.
+- [x] **Servicios**: Tarjetas con efecto Glassmorphism.
+- [x] **FAQ**: Sección de preguntas frecuentes interactiva.
+- [ ] **Turnos**: Integración con Calendly.
+- [ ] **SEO**: Metadatos y optimización para motores de búsqueda.
 
 ---
-*Desarrollado con ❤️ para Pepena.*
+*Desarrollado para Josefina Psicología.*
