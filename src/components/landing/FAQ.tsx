@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function FAQ() {
     return (
-        <section id="faq" className="py-10 lg:py-14 min-h-screen scroll-mt-20 lg:scroll-mt-16">
+        <section id="faq" className="py-20 lg:py-28 min-h-screen scroll-mt-20 lg:scroll-mt-16 bg-gray-100 dark:bg-zinc-900">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="font-serif text-3xl md:text-4xl text-center text-text-main dark:text-white mb-16 mt-8 ">
                     Preguntas Frecuentes

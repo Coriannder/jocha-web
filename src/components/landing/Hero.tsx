@@ -106,10 +106,10 @@ export default function Hero() {
 
                         <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl mx-auto max-w-md lg:max-w-[380px] ring-8 ring-white/30 backdrop-blur-sm transform lg:-translate-y-6">
                             <Image
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnTtEQTwXwDsqIf7J7eI4v0wk9lB4o69sTcjTT36ykxV8JonkGZFn7ZG1IoxxrHTVWM30qvBSREpNPwv7-q4Obs1CU6rCvkKmYBIGXxz-6nwqVA1vgtmSJHqYAv8u5MXrx0ZbDM_jePNh1ozWrDRi4Nzm0Niag6woqD1gwI7mxeRd7FwLqe1xQ3oAOlaI0KIiCl4APprCxS_qEKZ7jSdKXz20tsxMwBVxtAALQ1pZQa_B5kfjAvVRMKFdBzu1n1p7mOYO47r8uIxc"
-                                alt="Calm woman reading by a window in warm light"
+                                src="/images/jocha-web.png"
+                                alt="Josefina - Psicóloga Clínica"
                                 fill
-                                className="object-cover transform hover:scale-105 transition-transform duration-1000"
+                                className="object-cover object-top transform scale-125 hover:scale-[1.30] transition-transform duration-1000"
                                 priority
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent mix-blend-overlay"></div>
