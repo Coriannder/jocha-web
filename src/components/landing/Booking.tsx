@@ -1,11 +1,11 @@
 "use client";
 
 import { Video, Lock, CreditCard } from "lucide-react";
-import { InlineWidget } from "react-calendly";
 
 export default function Booking() {
+
     return (
-        <section id="reservar" className="py-10 lg:py-14 relative overflow-hidden scroll-mt-20 lg:scroll-mt-16">
+        <section id="reservar" className="py-16 lg:py-24 relative overflow-hidden scroll-mt-20 lg:scroll-mt-16">
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-40 pointer-events-none">
                 <div className="absolute -left-32 top-10 w-96 h-96 bg-primary/10 rounded-full mix-blend-multiply filter blur-[80px]"></div>
                 <div className="absolute right-0 bottom-0 w-[500px] h-[500px] bg-background-sage/60 dark:bg-primary/20 rounded-full mix-blend-multiply filter blur-[80px]"></div>
@@ -24,23 +24,34 @@ export default function Booking() {
                     </p>
                 </div>
 
-                <div className="glass-card rounded-2xl shadow-2xl p-1 border border-white/60 dark:border-white/10 backdrop-blur-xl bg-white/40 dark:bg-white/5 overflow-hidden">
-                    {/* 
-                        height="700px" is standard for InlineWidget. 
-                    */}
-                    <div className="w-full h-[500px] bg-white dark:bg-gray-800 rounded-xl overflow-hidden relative">
-                        <InlineWidget
-                            url="https://calendly.com/sebastiantaboada-bm/30min"
-                            styles={{ height: "100%", width: "100%" }}
-                            pageSettings={{
-                                backgroundColor: "ffffff",
-                                hideEventTypeDetails: false,
-                                hideLandingPageDetails: false,
-                                primaryColor: "5F7161", // Josefina Primary Green
-                                textColor: "2C3333",
-                            }}
-                        />
-                    </div>
+                <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10" id="calendly-button-container">
+                    {/* Botón 1: Consulta Inicial (15 min) */}
+                    <button
+                        onClick={() => {
+                            // @ts-expect-error Calendly is injected globally
+                            window.Calendly.initPopupWidget({
+                                url: 'https://calendly.com/sebastiantaboada-bm/consulta-inicial?hide_event_type_details=1&hide_landing_page_details=1&primary_color=5F7161&text_color=2C3333&background_color=ffffff'
+                            });
+                            return false;
+                        }}
+                        className="bg-primary text-white px-8 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
+                    >
+                        Consulta Inicial (Gratis)
+                    </button>
+
+                    {/* Botón 2: Sesión Regular (45 min) */}
+                    <button
+                        onClick={() => {
+                            // @ts-expect-error Calendly is injected globally
+                            window.Calendly.initPopupWidget({
+                                url: 'https://calendly.com/sebastiantaboada-bm/sesion-regular?hide_event_type_details=1&hide_landing_page_details=1&primary_color=5F7161&text_color=2C3333&background_color=ffffff'
+                            });
+                            return false;
+                        }}
+                        className="bg-white text-primary border-2 border-primary px-8 py-4 text-lg font-medium rounded-full shadow-lg hover:shadow-xl hover:bg-gray-50 hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
+                    >
+                        Sesión Regular
+                    </button>
                 </div>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-8 text-xs text-text-main/60 dark:text-gray-400">
