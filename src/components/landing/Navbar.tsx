@@ -18,6 +18,7 @@ export default function Navbar() {
                     <div className="flex-shrink-0 flex items-center">
                         <Link
                             href="#inicio"
+                            onClick={isOpen ? toggleMenu : undefined}
                             className="font-serif text-3xl text-primary dark:text-white tracking-tight font-medium hover:opacity-80 transition-opacity"
                         >
                             Josefina.
