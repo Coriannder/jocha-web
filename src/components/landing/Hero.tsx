@@ -12,11 +12,11 @@ export default function Hero() {
 
                     <div className="order-2 lg:order-1 text-center lg:text-left">
 
-                        <div className="inline-block px-5 py-2 mb-8 rounded-full bg-primary/5 border border-primary/20 text-primary dark:text-green-100 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
+                        <div className="hidden lg:inline-block px-5 py-2 mb-8 rounded-full bg-primary/5 border border-primary/20 text-primary dark:text-green-100 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
                             Psicóloga Clínica en Florencia, Italia
                         </div>
 
-                        <h1 className="font-serif text-2xl lg:text-4xl text-text-main dark:text-white leading-tight mb-4 drop-shadow-sm">
+                        <h1 className="hidden lg:block font-serif text-2xl lg:text-4xl text-text-main dark:text-white leading-tight mb-4 drop-shadow-sm">
                             Psicología Online para{" "}
                             <span className="italic text-primary relative inline-block">
                                 Argentinos
@@ -36,7 +36,7 @@ export default function Hero() {
                             en el Exterior
                         </h1>
 
-                        <p className="text-sm text-text-main/80 dark:text-gray-400 mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light">
+                        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light mt-4 lg:mt-0">
                             Un espacio seguro para trabajar el duelo migratorio, la ansiedad y
                             la identidad. Reconectá con tus raíces mientras construís tu
                             futuro en Italia y el mundo.
@@ -113,6 +113,19 @@ export default function Hero() {
                                 priority
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent mix-blend-overlay"></div>
+
+                            {/* Mobile Overlay Title */}
+                            <div className="absolute bottom-0 left-0 w-full p-6 pb-8 bg-gradient-to-t from-white via-white/90 to-transparent dark:from-background dark:via-background/90 lg:hidden flex flex-col items-center text-center z-20">
+                                <div className="inline-block px-3 py-1 mb-3 rounded-full bg-primary/10 border border-primary/20 text-primary dark:text-green-100 text-[9px] font-bold uppercase tracking-widest backdrop-blur-sm">
+                                    Psicóloga Clínica
+                                </div>
+                                <h1 className="font-serif text-2xl text-text-main dark:text-white leading-tight drop-shadow-sm">
+                                    Psicología Online para{" "}
+                                    <span className="italic text-primary relative inline-block">
+                                        Argentinos
+                                    </span>
+                                </h1>
+                            </div>
                         </div>
                         <div className="absolute -bottom-4 lg:bottom-0 -left-4 lg:-left-6 glass-card p-4 rounded-xl shadow-xl lg:max-w-[280px] hidden md:block border border-white/80 bg-white/70 backdrop-blur-md">
                             <div className="flex items-start gap-4">
