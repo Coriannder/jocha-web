@@ -4,14 +4,19 @@ import { ArrowRight, Star } from "lucide-react";
 
 export default function Hero() {
     return (
-        <header className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <header id="inicio" className="relative pt-28 pb-8 lg:pt-36 lg:pb-12 overflow-hidden min-h-[100vh] flex items-center scroll-mt-20 lg:scroll-mt-16">
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 ">
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+
                     <div className="order-2 lg:order-1 text-center lg:text-left">
-                        <div className="inline-block px-5 py-2 mb-8 rounded-full bg-primary/5 border border-primary/20 text-primary dark:text-green-100 text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+
+                        <div className="inline-block px-5 py-2 mb-8 rounded-full bg-primary/5 border border-primary/20 text-primary dark:text-green-100 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">
                             Psicóloga Clínica en Florencia, Italia
                         </div>
-                        <h1 className="font-serif text-5xl lg:text-7xl text-text-main dark:text-white leading-tight mb-8 drop-shadow-sm">
+
+                        <h1 className="font-serif text-2xl lg:text-4xl text-text-main dark:text-white leading-tight mb-4 drop-shadow-sm">
                             Psicología Online para{" "}
                             <span className="italic text-primary relative inline-block">
                                 Argentinos
@@ -30,28 +35,36 @@ export default function Hero() {
                             </span>{" "}
                             en el Exterior
                         </h1>
-                        <p className="text-xl text-text-main/80 dark:text-gray-400 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light">
+
+                        <p className="text-sm text-text-main/80 dark:text-gray-400 mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light">
                             Un espacio seguro para trabajar el duelo migratorio, la ansiedad y
                             la identidad. Reconectá con tus raíces mientras construís tu
                             futuro en Italia y el mundo.
                         </p>
+
                         <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+
                             <Link
                                 href="#reservar"
-                                className="bg-gradient-to-br from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white text-lg px-10 py-4 rounded-full font-medium transition-all shadow-xl hover:shadow-primary/40 flex items-center justify-center gap-3 group border border-white/20"
+                                className="bg-gradient-to-br from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white text-base px-10 py-4 rounded-full font-medium transition-all shadow-xl hover:shadow-primary/40 flex items-center justify-center gap-3 group border border-white/20"
                             >
                                 Reservar Sesión
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
+
                             <Link
                                 href="#sobre-mi"
                                 className="bg-white/40 backdrop-blur-sm border-2 border-white/60 hover:border-primary text-text-main dark:text-white dark:border-white/20 dark:hover:border-white hover:text-primary px-10 py-4 rounded-full font-medium transition-all flex items-center justify-center shadow-sm hover:shadow-md"
                             >
                                 Conocer más
                             </Link>
+
                         </div>
-                        <div className="mt-12 flex items-center justify-center lg:justify-start gap-5 text-sm text-text-main/70 dark:text-gray-500">
+
+                        <div className="mt-6 flex items-center justify-center lg:justify-start gap-4 text-[10px] text-text-main/70 dark:text-gray-500">
+
                             <div className="flex -space-x-3">
+
                                 <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white dark:border-background-dark overflow-hidden shadow-sm relative">
                                     <Image
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFb_A6ZL8BIl-yeBLkM_-gQOfVGoCPQ8uhr9T29o0E2xbJBNYtbOz374gsh8EK60iYkZTf7AL_uCZ2Hjv8dWg-9l4yIaO1c03lblrCoxdcbgokD8TePYblxRwtw-BHCTMtVfA7et_0M-JsHRhZgwHySlId935REfXZ9uT8q5Lx7MCpLpFuWQ5QK1cBaZmtN4DmQR4nwGIhs-purig_Tgc9n_kp0Ffn7pj0oMwW1eOeF1c1kF3OSTXd51sfIx99hogBvqrS8jQeBC8"
@@ -60,6 +73,7 @@ export default function Hero() {
                                         className="object-cover"
                                     />
                                 </div>
+
                                 <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white dark:border-background-dark overflow-hidden shadow-sm relative">
                                     <Image
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaGJxJ6q-Ldb6OslQ5kxHNLXuYskm0PGu7MiHZ8fYnDHgnJ9_SxkArBxtGbBaSqemtpd4q6UehFvcRE5CuMXzMj4Cg8Ar3I8tAGR53BmLa7wruCfxa5-jq4PWGyxN7ZhErlMWXnyQXlAIy3d8nRRG4torIe5kGVswj2iXL0p_gzgYnPAXo1nl_rWtHrxc1ixeYMIdAn_ee_qfSDTOszZlYzRB8og3MAU3HvnOcbzEHO7fd7OzIMbTUKd3YWJkyF27h2VG0SUWPCPA"
@@ -68,22 +82,29 @@ export default function Hero() {
                                         className="object-cover"
                                     />
                                 </div>
-                                <div className="w-10 h-10 rounded-full bg-primary/10 backdrop-blur-md border-2 border-white dark:border-background-dark overflow-hidden flex items-center justify-center text-xs font-bold text-primary shadow-sm">
+
+                                <div className="w-10 h-10 rounded-full bg-primary/10 backdrop-blur-md border-2 border-white dark:border-background-dark overflow-hidden flex items-center justify-center text-[10px] font-bold text-primary shadow-sm">
                                     +50
                                 </div>
+
                             </div>
+
                             <div className="flex flex-col text-left">
+
                                 <span className="font-bold text-text-main dark:text-gray-300">
                                     Pacientes acompañados
                                 </span>
-                                <span className="text-xs">
+                                <span className="text-[10px]">
                                     en procesos de migración este año
                                 </span>
+
                             </div>
                         </div>
                     </div>
+
                     <div className="order-1 lg:order-2 relative">
-                        <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl mx-auto max-w-md lg:max-w-full ring-8 ring-white/30 backdrop-blur-sm">
+
+                        <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl mx-auto max-w-md lg:max-w-[380px] ring-8 ring-white/30 backdrop-blur-sm transform lg:-translate-y-6">
                             <Image
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnTtEQTwXwDsqIf7J7eI4v0wk9lB4o69sTcjTT36ykxV8JonkGZFn7ZG1IoxxrHTVWM30qvBSREpNPwv7-q4Obs1CU6rCvkKmYBIGXxz-6nwqVA1vgtmSJHqYAv8u5MXrx0ZbDM_jePNh1ozWrDRi4Nzm0Niag6woqD1gwI7mxeRd7FwLqe1xQ3oAOlaI0KIiCl4APprCxS_qEKZ7jSdKXz20tsxMwBVxtAALQ1pZQa_B5kfjAvVRMKFdBzu1n1p7mOYO47r8uIxc"
                                 alt="Calm woman reading by a window in warm light"
@@ -93,13 +114,13 @@ export default function Hero() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent mix-blend-overlay"></div>
                         </div>
-                        <div className="absolute -bottom-8 -left-8 lg:-left-12 glass-card p-6 rounded-2xl shadow-xl max-w-xs hidden md:block border border-white/80 bg-white/70 backdrop-blur-md">
+                        <div className="absolute -bottom-4 lg:bottom-0 -left-4 lg:-left-6 glass-card p-4 rounded-xl shadow-xl lg:max-w-[280px] hidden md:block border border-white/80 bg-white/70 backdrop-blur-md">
                             <div className="flex items-start gap-4">
                                 <div className="bg-primary/10 p-2 rounded-full text-primary">
                                     <span className="text-2xl font-serif">{""}</span>
                                 </div>
                                 <div>
-                                    <p className="font-serif italic text-base text-text-main/90 dark:text-gray-300 mb-2">
+                                    <p className="font-serif italic text-sm text-text-main/90 dark:text-gray-300 mb-2">
                                         {"Encontrar a Josefina fue como encontrar un pedacito de casa en Europa."}
                                     </p>
                                     <div className="flex items-center gap-1 text-yellow-500">
@@ -111,8 +132,11 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[45rem] h-[45rem] bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl -z-10"></div>
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[35rem] h-[35rem] bg-gradient-to-tr from-background-sage to-transparent dark:bg-primary/5 rounded-full blur-3xl -z-10"></div>
         </header>

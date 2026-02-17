@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-24">
                     <div className="flex-shrink-0 flex items-center">
                         <Link
-                            href="#"
+                            href="#inicio"
                             className="font-serif text-3xl text-primary dark:text-white tracking-tight font-medium hover:opacity-80 transition-opacity"
                         >
                             Josefina.

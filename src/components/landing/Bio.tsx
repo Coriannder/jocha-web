@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function Bio() {
     return (
-        <section id="sobre-mi" className="py-24 lg:py-32 relative">
+        <section id="sobre-mi" className="py-10 lg:py-14 relative scroll-mt-20 lg:scroll-mt-16">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-8">
                     <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-4 block">
                         Sobre el proceso
                     </span>
-                    <h2 className="font-serif text-4xl md:text-5xl text-text-main dark:text-white mb-8">
+                    <h2 className="font-serif text-3xl md:text-4xl text-text-main dark:text-white mb-8">
                         Emigrar es nacer de nuevo
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20 mx-auto rounded-full"></div>
                 </div>
-                <div className="glass-card rounded-3xl p-8 md:p-12 shadow-sm bg-white/70 dark:bg-white/5 backdrop-blur-md border border-white/80 dark:border-white/10">
-                    <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-start">
-                        <div className="prose prose-lg prose-stone dark:prose-invert text-text-main/80 dark:text-gray-300 font-light leading-loose text-lg text-justify md:text-left">
+                <div className="glass-card rounded-3xl p-6 md:p-8 shadow-sm bg-white/70 dark:bg-white/5 backdrop-blur-md border border-white/80 dark:border-white/10">
+                    <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-start">
+                        <div className="prose prose-base prose-stone dark:prose-invert text-text-main/80 dark:text-gray-300 font-light leading-loose text-base text-justify md:text-left">
                             <p className="mb-8">
                                 <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-primary">
                                     L
@@ -53,13 +53,13 @@ export default function Bio() {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <h4 className="font-serif text-xl font-medium text-text-main dark:text-white">
+                                <h4 className="font-serif text-lg font-medium text-text-main dark:text-white">
                                     Lic. Josefina M.
                                 </h4>
-                                <p className="text-sm text-primary font-medium mt-1">
+                                <p className="text-xs text-primary font-medium mt-1">
                                     Psicóloga UBA
                                 </p>
-                                <p className="text-xs text-text-main/60 dark:text-gray-500 mt-1">
+                                <p className="text-[10px] text-text-main/60 dark:text-gray-500 mt-1">
                                     Mat. 4521 • Expat en Italia
                                 </p>
                             </div>

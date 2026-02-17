@@ -3,16 +3,16 @@ import { Camera, Mail, User, MapPin, Clock } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#2C3333] text-white pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
+        <footer className="bg-[#2C3333] text-white pt-10 pb-6 border-t border-white/5 relative overflow-hidden">
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-20"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 mb-8">
                     <div className="col-span-1 lg:col-span-1">
                         <span className="font-serif text-3xl text-white font-bold mb-6 block tracking-tight">
                             Josefina.
                         </span>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-8">
+                        <p className="text-gray-400 text-xs leading-relaxed mb-6">
                             Acompañamiento psicológico profesional con calidez humana.
                             Especialista en procesos migratorios y crisis vitales, ayudándote
                             a sentirte en casa, estés donde estés.
@@ -40,10 +40,10 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-serif font-medium text-lg mb-6 text-white tracking-wide">
+                        <h4 className="font-serif font-medium text-base mb-4 text-white tracking-wide">
                             Mapa del sitio
                         </h4>
-                        <ul className="space-y-4 text-gray-400 text-sm">
+                        <ul className="space-y-3 text-gray-400 text-xs">
                             <li>
                                 <Link
                                     href="#sobre-mi"
@@ -80,10 +80,10 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-serif font-medium text-lg mb-6 text-white tracking-wide">
+                        <h4 className="font-serif font-medium text-base mb-4 text-white tracking-wide">
                             Servicios
                         </h4>
-                        <ul className="space-y-4 text-gray-400 text-sm">
+                        <ul className="space-y-3 text-gray-400 text-xs">
                             <li>
                                 <Link href="#" className="hover:text-primary transition-colors">
                                     Terapia Individual
@@ -108,10 +108,10 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-serif font-medium text-lg mb-6 text-white tracking-wide">
+                        <h4 className="font-serif font-medium text-base mb-4 text-white tracking-wide">
                             Contacto
                         </h4>
-                        <ul className="space-y-6 text-gray-400 text-sm">
+                        <ul className="space-y-4 text-gray-400 text-xs">
                             <li className="flex items-start gap-4">
                                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                                 <span>
@@ -138,7 +138,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="border-t border-white/10 pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500">
                         © 2023 Josefina Psicología. Todos los derechos reservados.
                     </p>
