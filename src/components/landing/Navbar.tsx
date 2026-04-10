@@ -38,6 +38,12 @@ export default function Navbar() {
                             Servicios
                         </Link>
                         <Link
+                            href="/#proceso"
+                            className="text-text-main/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-base font-medium"
+                        >
+                            Proceso
+                        </Link>
+                        <Link
                             href="/#faq"
                             className="text-text-main/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-base font-medium"
                         >
@@ -79,6 +85,13 @@ export default function Navbar() {
                             className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
                         >
                             Servicios
+                        </Link>
+                        <Link
+                            href="/#proceso"
+                            onClick={toggleMenu}
+                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
+                        >
+                            Proceso
                         </Link>
                         <Link
                             href="/#faq"

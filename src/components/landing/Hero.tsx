@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, Globe, Users, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -62,43 +62,24 @@ export default function Hero() {
 
                         </div>
 
-                        <div className="mt-6 flex items-center justify-center lg:justify-start gap-4 text-[10px] text-text-main/70 dark:text-gray-500">
-
-                            <div className="flex -space-x-3">
-
-                                <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white dark:border-background-dark overflow-hidden shadow-sm relative">
-                                    <Image
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFb_A6ZL8BIl-yeBLkM_-gQOfVGoCPQ8uhr9T29o0E2xbJBNYtbOz374gsh8EK60iYkZTf7AL_uCZ2Hjv8dWg-9l4yIaO1c03lblrCoxdcbgokD8TePYblxRwtw-BHCTMtVfA7et_0M-JsHRhZgwHySlId935REfXZ9uT8q5Lx7MCpLpFuWQ5QK1cBaZmtN4DmQR4nwGIhs-purig_Tgc9n_kp0Ffn7pj0oMwW1eOeF1c1kF3OSTXd51sfIx99hogBvqrS8jQeBC8"
-                                        alt="Client portrait"
-                                        fill
-                                        className="object-cover"
-                                    />
+                        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
+                            <div className="flex items-center gap-2 text-text-main/70 dark:text-gray-400">
+                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                    <Users className="w-4 h-4" />
                                 </div>
-
-                                <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white dark:border-background-dark overflow-hidden shadow-sm relative">
-                                    <Image
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaGJxJ6q-Ldb6OslQ5kxHNLXuYskm0PGu7MiHZ8fYnDHgnJ9_SxkArBxtGbBaSqemtpd4q6UehFvcRE5CuMXzMj4Cg8Ar3I8tAGR53BmLa7wruCfxa5-jq4PWGyxN7ZhErlMWXnyQXlAIy3d8nRRG4torIe5kGVswj2iXL0p_gzgYnPAXo1nl_rWtHrxc1ixeYMIdAn_ee_qfSDTOszZlYzRB8og3MAU3HvnOcbzEHO7fd7OzIMbTUKd3YWJkyF27h2VG0SUWPCPA"
-                                        alt="Client portrait"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-
-                                <div className="w-10 h-10 rounded-full bg-primary/10 backdrop-blur-md border-2 border-white dark:border-background-dark overflow-hidden flex items-center justify-center text-[10px] font-bold text-primary shadow-sm">
-                                    +50
-                                </div>
-
+                                <span className="text-[11px] font-medium">+50 procesos acompañados</span>
                             </div>
-
-                            <div className="flex flex-col text-left">
-
-                                <span className="font-bold text-text-main dark:text-gray-300">
-                                    Pacientes acompañados
-                                </span>
-                                <span className="text-[10px]">
-                                    en procesos de migración este año
-                                </span>
-
+                            <div className="flex items-center gap-2 text-text-main/70 dark:text-gray-400">
+                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                    <Globe className="w-4 h-4" />
+                                </div>
+                                <span className="text-[11px] font-medium">Desde Europa al mundo</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-text-main/70 dark:text-gray-400">
+                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                    <ShieldCheck className="w-4 h-4" />
+                                </div>
+                                <span className="text-[11px] font-medium">100% Confidencial</span>
                             </div>
                         </div>
                     </div>
@@ -128,23 +109,7 @@ export default function Hero() {
                                 </h1>
                             </div>
                         </div>
-                        <div className="absolute -bottom-4 lg:bottom-0 -left-4 lg:-left-6 glass-card p-4 rounded-xl shadow-xl lg:max-w-[280px] hidden md:block border border-white/80 bg-white/70 backdrop-blur-md">
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-2 rounded-full text-primary">
-                                    <span className="text-2xl font-serif">{""}</span>
-                                </div>
-                                <div>
-                                    <p className="font-serif italic text-sm text-text-main/90 dark:text-gray-300 mb-2">
-                                        {"Encontrar a Josefina fue como encontrar un pedacito de casa en Europa."}
-                                    </p>
-                                    <div className="flex items-center gap-1 text-yellow-500">
-                                        {[...Array(5)].map((_, i) => (
-                                            <Star key={i} className="w-4 h-4 fill-current" />
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>

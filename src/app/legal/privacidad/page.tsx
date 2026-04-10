@@ -10,7 +10,7 @@ export default function Privacidad() {
 
                 <div className="prose prose-stone dark:prose-invert max-w-none text-text-main/80 dark:text-gray-300 space-y-6">
                     <p>
-                        Esta Política de Privacidad describe cómo Josefina Dominguez Lovaglio ("yo", "mi", "mí") recopila, utiliza y protege la información personal que me proporcionas a través del uso de mis servicios de psicoterapia online y mi sitio web.
+                        Esta Política de Privacidad describe cómo Josefina Dominguez Lovaglio (&quot;yo&quot;, &quot;mi&quot;, &quot;mí&quot;) recopila, utiliza y protege la información personal que me proporcionas a través del uso de mis servicios de psicoterapia online y mi sitio web.
                     </p>
 
                     <h2 className="text-2xl font-serif font-semibold mt-8 mb-4 text-text-main dark:text-gray-200">1. Responsable del Tratamiento de Datos</h2>
@@ -45,7 +45,7 @@ export default function Privacidad() {
 
                     <h2 className="text-2xl font-serif font-semibold mt-8 mb-4 text-text-main dark:text-gray-200">5. Uso de Herramientas de Terceros (WhatsApp y Videollamadas)</h2>
                     <p>
-                        El contacto inicial y la gestión de citas se realizan a través de WhatsApp. Al hacer clic en los botones de "Consulta Inicial" o "Sesión Regular" y enviarme un mensaje, estás consintiendo que utilice tu número de teléfono para responder a tu solicitud. Las sesiones se llevan a cabo mediante plataformas de videollamada como Zoom o Google Meet, cuyas propias políticas de privacidad y cifrado aplican durante su uso.
+                        El contacto inicial y la gestión de citas se realizan a través de WhatsApp. Al hacer clic en los botones de &quot;Consulta Inicial&quot; o &quot;Sesión Regular&quot; y enviarme un mensaje, estás consintiendo que utilice tu número de teléfono para responder a tu solicitud. Las sesiones se llevan a cabo mediante plataformas de videollamada como Zoom o Google Meet, cuyas propias políticas de privacidad y cifrado aplican durante su uso.
                     </p>
 
                     <h2 className="text-2xl font-serif font-semibold mt-8 mb-4 text-text-main dark:text-gray-200">6. Tus Derechos</h2>

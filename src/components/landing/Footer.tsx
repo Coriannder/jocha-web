@@ -62,6 +62,14 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
+                                    href="/#proceso"
+                                    className="hover:text-primary hover:pl-2 transition-all duration-300"
+                                >
+                                    Proceso
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href="/#faq"
                                     className="hover:text-primary hover:pl-2 transition-all duration-300"
                                 >
