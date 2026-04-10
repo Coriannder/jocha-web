@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Camera, Mail, User, MapPin, Clock } from "lucide-react";
+import { Camera, Mail, User, MapPin, Clock, Home } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -19,19 +19,19 @@ export default function Footer() {
                         </p>
                         <div className="flex gap-4">
                             <Link
-                                href="#"
+                                href="/#"
                                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-primary hover:to-primary-light transition-all duration-300 shadow-sm"
                             >
-                                <Camera className="w-5 h-5" />
+                                <Home className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="#"
+                                href="mailto:hola@josefinapsi.com"
                                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-primary hover:to-primary-light transition-all duration-300 shadow-sm"
                             >
                                 <Mail className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="#"
+                                href="/#sobre-mi"
                                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-gradient-to-br hover:from-primary hover:to-primary-light transition-all duration-300 shadow-sm"
                             >
                                 <User className="w-5 h-5" />
@@ -46,7 +46,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-gray-400 text-xs">
                             <li>
                                 <Link
-                                    href="#sobre-mi"
+                                    href="/#sobre-mi"
                                     className="hover:text-primary hover:pl-2 transition-all duration-300"
                                 >
                                     Sobre mí
@@ -54,7 +54,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#servicios"
+                                    href="/#servicios"
                                     className="hover:text-primary hover:pl-2 transition-all duration-300"
                                 >
                                     Servicios
@@ -62,7 +62,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#faq"
+                                    href="/#faq"
                                     className="hover:text-primary hover:pl-2 transition-all duration-300"
                                 >
                                     Preguntas Frecuentes
@@ -70,7 +70,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#reservar"
+                                    href="/#reservar"
                                     className="hover:text-primary hover:pl-2 transition-all duration-300"
                                 >
                                     Reservar turno
@@ -85,22 +85,22 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-3 text-gray-400 text-xs">
                             <li>
-                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                <Link href="/#servicios" className="hover:text-primary transition-colors">
                                     Terapia Individual
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                <Link href="/#servicios" className="hover:text-primary transition-colors">
                                     Desafíos del Proceso Migratorio
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                <Link href="/#servicios" className="hover:text-primary transition-colors">
                                     Ansiedad y Contingencias
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                <Link href="/#servicios" className="hover:text-primary transition-colors">
                                     Consultoría Online
                                 </Link>
                             </li>
@@ -140,16 +140,16 @@ export default function Footer() {
 
                 <div className="border-t border-white/10 pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500">
-                        © 2023 Josefina Psicología. Todos los derechos reservados.
+                        © 2026 Josefina Psicología. Todos los derechos reservados.
                     </p>
                     <div className="flex gap-8 text-xs text-gray-500">
-                        <Link href="#" className="hover:text-white transition-colors">
+                        <Link href="/legal/privacidad" className="hover:text-white transition-colors">
                             Política de Privacidad
                         </Link>
-                        <Link href="#" className="hover:text-white transition-colors">
+                        <Link href="/legal/terminos" className="hover:text-white transition-colors">
                             Términos y Condiciones
                         </Link>
-                        <Link href="#" className="hover:text-white transition-colors">
+                        <Link href="/legal/aviso-legal" className="hover:text-white transition-colors">
                             Aviso Legal
                         </Link>
                     </div>

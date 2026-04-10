@@ -26,32 +26,24 @@ export default function Booking() {
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10" id="calendly-button-container">
                     {/* Botón 1: Consulta Inicial (15 min) */}
-                    <button
-                        onClick={() => {
-                            // @ts-expect-error Calendly is injected globally
-                            window.Calendly.initPopupWidget({
-                                url: 'https://calendly.com/sebastiantaboada-bm/consulta-inicial?hide_event_type_details=1&hide_landing_page_details=1&primary_color=5F7161&text_color=2C3333&background_color=ffffff'
-                            });
-                            return false;
-                        }}
+                    <a
+                        href="https://wa.me/393792954744?text=Hola%20Josefina%2C%20vi%20tu%20web%20y%20me%20gustar%C3%ADa%20coordinar%20la%20consulta%20inicial%20gratuita%20de%2015%20min.%20Mi%20zona%20horaria%20es..."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-primary text-white px-8 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
                     >
                         Consulta Inicial (Gratis)
-                    </button>
+                    </a>
 
                     {/* Botón 2: Sesión Regular (45 min) */}
-                    <button
-                        onClick={() => {
-                            // @ts-expect-error Calendly is injected globally
-                            window.Calendly.initPopupWidget({
-                                url: 'https://calendly.com/sebastiantaboada-bm/sesion-regular?hide_event_type_details=1&hide_landing_page_details=1&primary_color=5F7161&text_color=2C3333&background_color=ffffff'
-                            });
-                            return false;
-                        }}
+                    <a
+                        href="https://wa.me/393792954744?text=Hola%20Josefina%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20regular%20contigo.%20%C2%BFPodr%C3%ADas%20decirme%20qu%C3%A9%20horarios%20tienes%20disponibles%3F"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-white text-primary border-2 border-primary px-8 py-4 text-lg font-medium rounded-full shadow-lg hover:shadow-xl hover:bg-gray-50 hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
                     >
                         Sesión Regular
-                    </button>
+                    </a>
                 </div>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-8 text-xs text-text-main/60 dark:text-gray-400">
