@@ -7,32 +7,32 @@ export default function Services() {
         {
             icon: Brain,
             title: "Terapia Individual",
-            description: "Espacio confidencial para explorar tus emociones, patrones de conducta y desafíos personales. Un encuentro semanal para detenerte y escucharte sin juicios.",
+            description: "Un espacio para ponerle palabras al malestar y reencontrarse con el propio deseo.Es un encuadre confidencial para trabajar sobre aquello que nos detiene o nos abruma, buscando aliviar el peso de los síntomas que afectan el día a día.",
             items: [
-                "Autoestima y valoración",
-                "Vínculos a distancia",
-                "Gestión emocional"
+                "Tratamiento de síntomas y angustias.",
+                "Análisis de inhibiciones que limitan el accionar.",
+                "Reconstrucción de lazos vinculares y afectivos."
             ]
         },
         {
             icon: Fingerprint,
-            title: "Crisis de Identidad",
-            description: "Cuando el entorno cambia, nosotros también. Trabajamos en redefinir quién sos en este nuevo contexto, integrando tu historia con tu presente.",
+            title: "Desafíos del Proceso Migratorio",
+            description: "Repensarse en un nuevo contexto: cuando los puntos de referencia habituales cambian. La migración pone en jaque quiénes creemos ser. Trabajamos en la integración de tu historia personal con el presente, alojando la extrañeza que aparece al habitar una cultura diferente.",
             items: [
-                "Choque cultural",
-                "Sentido de pertenencia",
-                "Proyecto de vida"
+                "Elaboración del duelo migratorio.",
+                "Búsqueda de un nuevo sentido de pertenencia.",
+                "Construcción de soportes en la nueva trama social."
             ],
             isFeatured: true
         },
         {
             icon: Sparkles,
-            title: "Ansiedad y Adaptación",
-            description: "Herramientas concretas para gestionar la incertidumbre del migrante, el estrés por los trámites y la presión de 'tener éxito' en el exterior.",
+            title: "Ansiedad y Contingencias",
+            description: "Herramientas para transitar la incertidumbre y el desgaste emocional. Vivir lejos de casa suele traer aparejada la sensación de falta de control. Trabajamos para transformar la parálisis frente a lo desconocido en puntos de apoyo que permitan lidiar con la realidad de forma más cuidada.",
             items: [
-                "Ataques de pánico",
-                "Estrés post-migratorio",
-                "Insomnio"
+                "Abordaje de crisis de angustia y pánico.",
+                "Tratamiento de miedos y fobias.",
+                "Gestión del cansancio subjetivo ante lo nuevo."
             ]
         }
     ];
@@ -49,9 +49,10 @@ export default function Services() {
                             Áreas de Trabajo
                         </h2>
                         <p className="text-text-main/70 dark:text-gray-400 text-base font-light">
-                            Un abordaje integral adaptado a tus necesidades y momentos
-                            vitales, diseñado específicamente para quienes viven lejos de
-                            casa.
+                            Propongo un abordaje integral que prioriza la escucha singular frente al sufrimiento.
+                            El proceso terapéutico permite desarmar la lógica de lo &quot;predestinado&quot; para empezar
+                            a entender lo que nos ocurre desde un lugar nuevo, permitiéndonos ser protagonistas de
+                            nuestra propia historia.
                         </p>
                     </div>
                     <Link

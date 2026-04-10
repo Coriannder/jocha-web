@@ -33,13 +33,14 @@ export default function Hero() {
                                     ></path>
                                 </svg>
                             </span>{" "}
-                            en el Exterior
+                            en Europa y cualquier parte del mundo
                         </h1>
 
                         <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light mt-4 lg:mt-0">
-                            Un espacio seguro para trabajar el duelo migratorio, la ansiedad y
-                            la identidad. Reconectá con tus raíces mientras construís tu
-                            futuro en Italia y el mundo.
+                            Un espacio seguro en tu propio idioma para transitar los desafíos de vivir
+                            lejos de casa, a través de una escucha profesional y singular sobre los
+                            obstáculos que te atraviesan para encontrar un nuevo modo de habitar tu realidad.
+
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">

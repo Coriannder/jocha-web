@@ -85,22 +85,22 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-3 text-gray-400 text-xs">
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">
+                                <Link href="#servicios" className="hover:text-primary transition-colors">
                                     Terapia Individual
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">
-                                    Orientación a Expatriados
+                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                    Desafíos del Proceso Migratorio
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">
-                                    Talleres de Duelo Migratorio
+                                <Link href="#servicios" className="hover:text-primary transition-colors">
+                                    Ansiedad y Contingencias
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-primary transition-colors">
+                                <Link href="#servicios" className="hover:text-primary transition-colors">
                                     Consultoría Online
                                 </Link>
                             </li>
@@ -127,12 +127,12 @@ export default function Footer() {
                                     href="mailto:hola@josefinapsi.com"
                                     className="hover:text-white transition-colors"
                                 >
-                                    hola@josefinapsi.com
+                                    josefinadl07@gmail.com
                                 </Link>
                             </li>
                             <li className="flex items-center gap-4">
                                 <Clock className="w-5 h-5 text-primary" />
-                                <span>Lun - Vie: 9:00 - 19:00 (CET)</span>
+                                <span>Lun - Vie: 9:00 - 19:00</span>
                             </li>
                         </ul>
                     </div>

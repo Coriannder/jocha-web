@@ -6,10 +6,10 @@ export default function Bio() {
             <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-8">
                     <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-4 block">
-                        Sobre el proceso
+                        Sobre mi
                     </span>
                     <h2 className="font-serif text-3xl md:text-4xl text-text-main dark:text-white mb-8">
-                        Emigrar es nacer de nuevo
+                        Habitar la distancia
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20 mx-auto rounded-full"></div>
                 </div>
@@ -18,14 +18,25 @@ export default function Bio() {
                         <div className="prose prose-base prose-stone dark:prose-invert text-text-main/80 dark:text-gray-300 font-light leading-loose text-base text-justify md:text-left">
                             <p className="mb-8">
                                 <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-primary">
-                                    L
+                                   M 
                                 </span>
-                                a distancia no solo se mide en kilómetros, sino en las ausencias
-                                cotidianas. Cuando decidimos partir, llevamos una valija llena
-                                de sueños, pero también un equipaje invisible de miedos y
-                                expectativas.
+                                Migrar no es solo un desplazamiento geográfico, es un movimiento subjetivo que pone en juego diversos duelos.
+                                Se desprenden de nosotros los modismos, la idiosincrasia y ese idioma que funciona como nuestro enlace afectivo fundamental.
+                                Al partir, cambia el lugar que ocupábamos para los otros y nos confrontamos con lo que fuimos en relación a lo que aún no logramos habitar.
+                                Ese vacío puede dejarnos atrapados en la idealización del pasado o en la espera de lo que no vuelve. El trabajo terapéutico propone transitar
+                                esas pérdidas que aparecen &quot;a cuentagotas&quot;, para poder construir nuevas narrativas que se integren a nuestra historia y nos permitan volver
+                                a sentirnos parte.
+                                <br/>
+
+                                Vivo en Italia desde hace tres años y me especializo en clínica online, con foco en los procesos
+                                migratorios, sus efectos e implicancias en la subjetividad.
+                                Soy Psicóloga egresada de la Universidad Nacional de Tucumán y
+                                cuento con formación en clínica psicoanalítica y en el ámbito comunitario,
+                                desempeñándome en la promoción de derechos humanos desde un abordaje pedagógico-psicológico
+                                y en la prevención de consumos problemáticos.
+
                             </p>
-                            <p className="mb-8">
+                            {/* <p className="mb-8">
                                 Como argentina viviendo en Florencia, entiendo profundamente la
                                 ambivalencia del migrante: la alegría de descubrir lo nuevo
                                 conviviendo con la nostalgia de lo conocido. El{" "}
@@ -33,19 +44,19 @@ export default function Bio() {
                                 proceso natural de adaptación que requiere tiempo, paciencia y,
                                 sobre todo, un espacio donde poder hablar tu propio idioma
                                 emocional.
-                            </p>
-                            <p>
+                            </p> */}
+                            {/* <p>
                                 Mi enfoque terapéutico busca integrar esas dos partes de tu
                                 identidad: la que fuiste y la que estás construyendo. No tenés
                                 que elegir entre tus raíces y tus alas.
-                            </p>
+                            </p> */}
                         </div>
                         <div className="flex flex-col items-center space-y-4 md:pt-4 min-w-[200px]">
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-orange-100/50 rounded-full blur opacity-40 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"></div>
                                 <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 dark:border-gray-800 shadow-lg">
                                     <Image
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuMRyoNLqACEKoWkXlmPV-CuYMdtXFVLTDb5Y_Xvl72QQnunwlpF_QHrygNpKVVJsh3Zetukjye5DftmIUbcxuqj6mJ9UJXkRzbp_gU2W0H91R6aFKB2FVgRenPVxW_UoAD5Hm6we3_OpZ5G0vNSSnTriXdI0XZuFTdtzbzVZ_mY3YJCylrm-z9uuAh0yjVpW1Y0JWi_rEWSBlMuM9m4rgTHZVc3CQhL4MWMk1c4RbtMZrdZ-M_AeO1-rwFQG4yvDGHlkkX8ZkdUI"
+                                        src="/images/jocha-portrait.png"
                                         alt="Josefina Portrait"
                                         fill
                                         className="object-cover"
@@ -54,16 +65,16 @@ export default function Bio() {
                             </div>
                             <div className="text-center">
                                 <h4 className="font-serif text-lg font-medium text-text-main dark:text-white">
-                                    Lic. Josefina M.
+                                    Josefina Dominguez <br/> Lovaglio.
                                 </h4>
                                 <p className="text-xs text-primary font-medium mt-1">
-                                    Psicóloga UBA
+                                    Psicóloga UNT
                                 </p>
                                 <p className="text-[10px] text-text-main/60 dark:text-gray-500 mt-1">
-                                    Mat. 4521 • Expat en Italia
+                                    M.P. 3947
                                 </p>
                             </div>
-                            <div className="pt-2 flex items-center justify-center">
+                            {/* <div className="pt-2 flex items-center justify-center">
                                 <div className="relative w-8 h-6 mx-1 hover:scale-110 transition-transform">
                                     <Image
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuvhHMH_CV1eTiwCOHS2IOg8HdHyxlAOn-9fwXUVo1YcfvXy83SnoU3v68TfJCuO0siz43w64388yQDSWCsvnfDaFl6OJF6DnDYdUpg05Iv2jW8CLNW6C3U2YBM0ve640QA0ECuYp2cv5TOq-CIqtR5Ul_1NyJhihY4Cu4bGrqCwckvzYuqkdfwfFFvSxXszXa2ysYOfYCImGlqZHKosL-HmPyn4iw8UAThWmudo77cHaFKVIGRVw4Md7KURTbP3VIlVfg14lXIt8"
@@ -81,7 +92,7 @@ export default function Bio() {
                                         className="object-contain opacity-80"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
