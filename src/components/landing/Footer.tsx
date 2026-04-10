@@ -148,7 +148,15 @@ export default function Footer() {
 
                 <div className="border-t border-white/10 pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500">
-                        © 2026 Josefina Psicología. Todos los derechos reservados.
+                        © 2026 Josefina Psicología. Todos los derechos reservados. | Desarrollado por{" "}
+                        <a 
+                            href="https://sebasdev.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:text-primary-light transition-colors font-medium"
+                        >
+                            sebasdev.com
+                        </a>
                     </p>
                     <div className="flex gap-8 text-xs text-gray-500">
                         <Link href="/legal/privacidad" className="hover:text-white transition-colors">
