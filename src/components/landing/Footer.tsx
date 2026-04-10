@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Camera, Mail, User, MapPin, Clock, Home } from "lucide-react";
+import { Mail, User, MapPin, Clock, Home } from "lucide-react";
 
 export default function Footer() {
     return (

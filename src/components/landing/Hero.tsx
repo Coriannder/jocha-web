@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Star, Globe, Users, ShieldCheck } from "lucide-react";
+import { ArrowRight, Globe, Users, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
     return (

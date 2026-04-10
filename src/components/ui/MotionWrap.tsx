@@ -29,7 +29,7 @@ export default function MotionWrap({
             transition: { 
                 duration: 0.8, 
                 delay: delay,
-                ease: [0.21, 0.47, 0.32, 0.98] 
+                ease: [0.21, 0.47, 0.32, 0.98] as const 
             } 
         }
     };
