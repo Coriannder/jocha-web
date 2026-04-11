@@ -1,4 +1,7 @@
+"use client";
+
 import { LucideIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface ServiceCardProps {
     icon: LucideIcon;
@@ -16,10 +19,18 @@ export default function ServiceCard({
     isFeatured = false,
 }: ServiceCardProps) {
     return (
-        <div
-            className={`glass-card p-6 rounded-2xl transition-all duration-500 group relative overflow-hidden flex flex-col h-full active:scale-[0.98] active:duration-75 ${isFeatured
-                    ? "shadow-lg hover:shadow-2xl transform md:-translate-y-4 ring-1 ring-primary/20 hover:ring-primary/40 bg-white/60 dark:bg-white/10 backdrop-blur-xl"
-                    : "shadow-sm hover:shadow-xl md:hover:-translate-y-2 relative z-10 bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-md"
+        <motion.div
+            whileHover={{ 
+                y: isFeatured ? -20 : -10,
+                transition: { type: "spring", stiffness: 400, damping: 25 }
+            }}
+            whileTap={{ 
+                scale: 0.98,
+                transition: { type: "spring", stiffness: 400, damping: 25 }
+            }}
+            className={`glass-card p-6 rounded-2xl transition-shadow duration-500 group relative overflow-hidden flex flex-col h-full ${isFeatured
+                    ? "shadow-lg hover:shadow-2xl ring-1 ring-primary/20 hover:ring-primary/40 bg-white/60 dark:bg-white/10 backdrop-blur-xl md:-translate-y-4"
+                    : "shadow-sm hover:shadow-xl relative z-10 bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-md"
                 }`}
         >
             {isFeatured && (
@@ -28,14 +39,16 @@ export default function ServiceCard({
                 </div>
             )}
 
-            <div
-                className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 border shadow-inner group-hover:scale-110 transition-all duration-500 text-primary ${isFeatured
+            <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 border shadow-inner transition-all duration-500 text-primary ${isFeatured
                         ? "bg-gradient-to-br from-primary/10 to-primary/5 border-primary/10"
                         : "bg-gradient-to-br from-white to-gray-50 dark:from-white/10 dark:to-white/5 border-white/50"
                     }`}
             >
                 <Icon className="w-8 h-8" />
-            </div>
+            </motion.div>
 
             <h3 className="font-serif text-xl font-medium mb-1 text-text-main dark:text-white">
                 {title}
@@ -54,6 +67,6 @@ export default function ServiceCard({
                     ))}
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }

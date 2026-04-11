@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, Brain, Fingerprint, Sparkles } from "lucide-react";
 import ServiceCard from "@/components/landing/ServiceCard";

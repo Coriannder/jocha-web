@@ -77,23 +77,46 @@
 }
 
 /* 
- * FIX: Suprimir hovers en dispositivos híbridos cuando se usa touch.
- * Esto evita que las sombras y transformaciones se queden "pegadas".
+ * SMART INTERACTION SYSTEM (PREMIUM)
+ * ----------------------------------
  */
+
+/* 1. Global Active Feedback (Premium Feel) */
+button:active, 
+a:active, 
+.active-trigger:active {
+  transform: scale(0.97) !important;
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
+/* 2. Smart Hover Suppression for Hybrid Screens */
 @media (hover: hover) {
+  /* When the user is currently using touch, we suppress ALL hover effects
+     that could get "stuck", providing a clean, app-like experience. */
   html.is-touching *:hover {
-    /* Reset de trasformaciones comunes de Tailwind */
+    /* Reset transformations (Scale, Translate, Rotate) */
     --tw-scale-x: 1 !important;
     --tw-scale-y: 1 !important;
-    /* No reseteamos translate-y porque algunos elementos (Featured) lo usan de base */
+    --tw-translate-x: 0 !important;
+    --tw-translate-y: 0 !important;
+    --tw-rotate: 0 !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
     
-    /* Reset de sombras (volver al estado base o ninguno) */
+    /* Reset Shadows */
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000) !important;
+    
+    /* Prevent sticky tooltips/overlays (opacity changes) */
+    transition-duration: 0s !important;
   }
-  
-  /* Caso específico para las tarjetas que se elevan */
-  html.is-touching .hover\:-translate-y-2:hover {
-    transform: translateY(0) !important;
+
+  /* Specific fix for elements that use group-hover for visibility (like tooltips) */
+  html.is-touching .group:hover [class*="group-hover\:opacity-"] {
+    opacity: 0 !important;
   }
+}
+
+/* 3. Smooth Transitions standard */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
