@@ -75,35 +75,35 @@ export default function Navbar() {
                         <Link
                             href="/#sobre-mi"
                             onClick={toggleMenu}
-                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
+                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-all active:opacity-70 active:scale-[0.98]"
                         >
                             Sobre mí
                         </Link>
                         <Link
                             href="/#servicios"
                             onClick={toggleMenu}
-                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
+                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-all active:opacity-70 active:scale-[0.98]"
                         >
                             Servicios
                         </Link>
                         <Link
                             href="/#proceso"
                             onClick={toggleMenu}
-                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
+                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-all active:opacity-70 active:scale-[0.98]"
                         >
                             Proceso
                         </Link>
                         <Link
                             href="/#faq"
                             onClick={toggleMenu}
-                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-colors"
+                            className="text-text-main/90 dark:text-gray-200 text-lg font-medium hover:text-primary transition-all active:opacity-70 active:scale-[0.98]"
                         >
                             Preguntas Frecuentes
                         </Link>
                         <Link
                             href="/#reservar"
                             onClick={toggleMenu}
-                            className="bg-primary text-white px-8 py-3 rounded-full text-lg font-medium w-full text-center shadow-md"
+                            className="bg-primary text-white px-8 py-3 rounded-full text-lg font-medium w-full text-center shadow-md active:scale-95 active:duration-75 transition-all"
                         >
                             Reservar Sesión
                         </Link>

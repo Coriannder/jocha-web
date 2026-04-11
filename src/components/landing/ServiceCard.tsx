@@ -17,9 +17,9 @@ export default function ServiceCard({
 }: ServiceCardProps) {
     return (
         <div
-            className={`glass-card p-6 rounded-2xl transition-all duration-500 group relative overflow-hidden flex flex-col h-full ${isFeatured
+            className={`glass-card p-6 rounded-2xl transition-all duration-500 group relative overflow-hidden flex flex-col h-full active:scale-[0.98] active:duration-75 ${isFeatured
                     ? "shadow-lg hover:shadow-2xl transform md:-translate-y-4 ring-1 ring-primary/20 hover:ring-primary/40 bg-white/60 dark:bg-white/10 backdrop-blur-xl"
-                    : "shadow-sm hover:shadow-xl hover:-translate-y-2 relative z-10 bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-md"
+                    : "shadow-sm hover:shadow-xl md:hover:-translate-y-2 relative z-10 bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-md"
                 }`}
         >
             {isFeatured && (

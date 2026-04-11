@@ -30,7 +30,7 @@ export default function Booking() {
                         href="https://wa.me/393792954744?text=Hola%20Josefina%2C%20vi%20tu%20web%20y%20me%20gustar%C3%ADa%20coordinar%20la%20consulta%20inicial%20gratuita%20de%2015%20min.%20Mi%20zona%20horaria%20es..."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-primary text-white px-8 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
+                        className="bg-primary text-white px-8 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform active:scale-95 active:duration-75 w-full md:w-auto text-center"
                     >
                         Consulta Inicial (Gratis)
                     </a>
@@ -40,7 +40,7 @@ export default function Booking() {
                         href="https://wa.me/393792954744?text=Hola%20Josefina%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20regular%20contigo.%20%C2%BFPodr%C3%ADas%20decirme%20qu%C3%A9%20horarios%20tienes%20disponibles%3F"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-primary border-2 border-primary px-8 py-4 text-lg font-medium rounded-full shadow-lg hover:shadow-xl hover:bg-gray-50 hover:scale-105 transition-all duration-300 transform active:scale-95 w-full md:w-auto text-center"
+                        className="bg-white text-primary border-2 border-primary px-8 py-4 text-lg font-medium rounded-full shadow-lg hover:shadow-xl hover:bg-gray-50 hover:scale-105 transition-all duration-300 transform active:scale-95 active:duration-75 w-full md:w-auto text-center"
                     >
                         Sesión Regular
                     </a>
