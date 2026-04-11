@@ -75,3 +75,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 
+ * FIX: Suprimir hovers en dispositivos híbridos cuando se usa touch.
+ * Esto evita que las sombras y transformaciones se queden "pegadas".
+ */
+@media (hover: hover) {
+  html.is-touching *:hover {
+    /* Reset de trasformaciones comunes de Tailwind */
+    --tw-scale-x: 1 !important;
+    --tw-scale-y: 1 !important;
+    /* No reseteamos translate-y porque algunos elementos (Featured) lo usan de base */
+    
+    /* Reset de sombras (volver al estado base o ninguno) */
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000) !important;
+  }
+  
+  /* Caso específico para las tarjetas que se elevan */
+  html.is-touching .hover\:-translate-y-2:hover {
+    transform: translateY(0) !important;
+  }
+}
+

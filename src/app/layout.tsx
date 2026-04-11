@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
+import InteractionDetector from "@/components/ui/InteractionDetector";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${lora.variable} antialiased`}
       >
+        <InteractionDetector />
         {children}
       </body>
     </html>
