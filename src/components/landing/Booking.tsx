@@ -17,14 +17,14 @@ export default function Booking() {
                         Agenda tu sesión
                     </h2>
                     <p className="text-lg text-text-main/70 dark:text-gray-300 max-w-2xl mx-auto font-light">
-                        {"Seleccioná el día y horario que mejor te convenga."} <br />
+                        {"Escribime para coordinar el día y horario que mejor te convenga."} <br />
                         <span className="font-medium text-primary">
                             La primera consulta de orientación es gratuita (15 min).
                         </span>
                     </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10" id="calendly-button-container">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10" id="booking-buttons-container">
                     {/* Botón 1: Consulta Inicial (15 min) */}
                     <a
                         href="https://wa.me/393792954744?text=Hola%20Josefina%2C%20vi%20tu%20web%20y%20me%20gustar%C3%ADa%20coordinar%20la%20consulta%20inicial%20gratuita%20de%2015%20min.%20Mi%20zona%20horaria%20es..."
